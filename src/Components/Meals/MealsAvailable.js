@@ -1,3 +1,4 @@
+
 import Card from "../UI/Card";
 import MealsItem from "./MealsItem";
 const dummy_meals = [
@@ -39,7 +40,9 @@ const MealsAvailable = (props) => {
              description={meal.description}
              price={meal.price}
              />
+            
             ))}
+            
         </ul>
       </Card>
     </section>
