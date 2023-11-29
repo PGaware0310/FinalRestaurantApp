@@ -1,0 +1,18 @@
+.heading{
+    background-color: #3f3f3f;
+    color:white;
+text-align: center;
+position: relative;
+    border-radius: 14px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    height: 50%;
+    max-width: 45rem;
+    margin-top: -5rem;
+    margin-left: 25%;
+}
+.heading h1{
+    font-size: 2rem;
+    margin-top: 2px;
+}
