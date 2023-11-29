@@ -1,0 +1,9 @@
+.heading{
+    background-color: #3f3f3f;
+    color:white;
+    height: 50%;
+    width: 25%;
+    border-radius: 8px;
+    margin-top: 50%;
+    box-shadow: 0 0 14px rebeccapurple;
+}

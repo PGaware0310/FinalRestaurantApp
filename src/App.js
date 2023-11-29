@@ -1,4 +1,5 @@
 import Layout from "./Components/Layout/Layout";
+import MealsAvailable from "./Components/Meals/MealsAvailable";
 import MealsSummary from "./Components/Meals/MealsSummary";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div>
       <Layout/>
       <MealsSummary/>
+      <MealsAvailable/>
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.price{
+    color: rgb(175, 21, 21);
+
+}
+
+.description{
+    font-size: 14px;
+    font-family: cursive;
+    
+}
+.meal {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
+  }

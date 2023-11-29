@@ -12,7 +12,7 @@ const MealsSummary = (props) => {
           With a few clicks, savor the convenience of doorstep delivery while
           indulging in the finest flavors curated by our passionate chefs.
         </p>
-      
+        
     </section>
   );
 };
