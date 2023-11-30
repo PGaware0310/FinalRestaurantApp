@@ -3,7 +3,7 @@ const Input=props=>{
 return(
     <div className={classes.input}>
         <label htmlFor={props.id}>{props.label}</label>
-        <input
+        <input className={classes.input1}
             type={props.type}
             id={props.id}
             min={props.min}

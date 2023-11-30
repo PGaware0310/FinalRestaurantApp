@@ -1,0 +1,32 @@
+.cart{
+   
+font-size: 14px;
+list-style: none;
+}
+
+.amount{
+font-weight: bold;
+display:flex ;
+padding-bottom: 1rem;
+justify-content: space-between;
+}
+
+.button{
+text-align: right;
+}
+
+.button button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid rgb(42, 182, 105);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-left: 1rem;
+}
+
+.button button:hover,
+.button button:active{
+    background-color: rgb(42, 182, 105);
+    border-color: rgb(11, 121, 60);
+    color: white;
+}

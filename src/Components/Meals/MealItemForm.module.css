@@ -16,4 +16,5 @@
 .form button:hover,
 .form button:active{
     background-color: rgb(6, 114, 63);
+    border-color: rgb(6, 114, 63);
 }
