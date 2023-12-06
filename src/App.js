@@ -6,6 +6,7 @@ import Cart from "./Components/Cart/Cart";
 import CartProvider from "./store/CartProvider";
 
 function App() {
+
   const [openCart,setOpenCart]=useState(false);
 
   const onShowCart=()=>{

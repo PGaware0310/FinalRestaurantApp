@@ -1,4 +1,3 @@
-
 import Card from "../UI/Card";
 import MealsItem from "./MealsItem";
 const dummy_meals = [
@@ -29,20 +28,19 @@ const dummy_meals = [
 ];
 
 const MealsAvailable = (props) => {
+  // console.log({dummy_meals});
   return (
     <section>
       <Card>
         <ul>
           {dummy_meals.map((meal) => (
-            <MealsItem 
-            key={meal.id}
-             name={meal.name}
-             description={meal.description}
-             price={meal.price}
-             />
-            
-            ))}
-            
+            <MealsItem
+              key={meal.id}
+              name={meal.name}
+              description={meal.description}
+              price={meal.price}
+            />
+          ))}
         </ul>
       </Card>
     </section>

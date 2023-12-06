@@ -7,7 +7,9 @@ return(
             type={props.type}
             id={props.id}
             min={props.min}
+            max={props.max}
             defaultValue={props.defaultValue}
+            onChange={props.onChange}
         />
     </div>
 );
