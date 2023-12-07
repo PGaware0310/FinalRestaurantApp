@@ -11,7 +11,7 @@ return(
     <LayoutCartButton onClick={props.showCart}/>
     </header>
     {/* <div > */}
-        <img className={classes['img']} src={foodImage} alt="Delicious food"/>
+        <img className={classes.img} src={foodImage} alt="Delicious food"/>
     {/* </div> */}
     </Fragment>
 );
