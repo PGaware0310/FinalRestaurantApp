@@ -5,15 +5,21 @@ import CartContext from "../../store/cart-context";
 
 const Cart = (props) => {
   const cartCnt = useContext(CartContext);
+
+  const onReduceHandler=(id)=>{
+    cartCnt.removeItem(id);
+    console.log("Index of item to reduce number of selected items:",id);
+  };
+
   const cartItems = (
-    <ul>
-      {cartCnt.items.map((item) => (
-        <li className={classes.cart} key={item.id}>
+    <ul >
+      {cartCnt.items.map((item,id) => (
+        <li  className={classes.cart} key={id} >
           <div className={classes.name}>{item.name}</div>
           <div className={classes.style}>
-          <span className={classes.price}>${item.price}</span>
+          <span className={classes.price}>${item.price.toFixed(2)}</span>
           <span>x{item.quantity}</span>
-          <button className={classes["span-button"]}>-</button>
+          <button className={classes["span-button"]} onClick={()=>onReduceHandler(item.id)}>-</button>
           <button className={classes["span-button"]}>+</button>
           </div>
         </li>

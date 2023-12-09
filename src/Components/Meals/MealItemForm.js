@@ -18,6 +18,7 @@ const MealsItemForm = (props) => {
     event.preventDefault();
     //  cartCtx.addItem(props.item);
     // const quantity=document.getElementById("amount"+props.id).value;
+    console.log("ID before adding:", props.id);
     cartCtx.addItem({ ...props.item, quantity: quantity });
     console.log("After render:", cartCtx);
   };
@@ -25,7 +26,7 @@ const MealsItemForm = (props) => {
   return (
     <form className={classes.form}>
       {/* {console.log("Inside render:", cartCtx.items)} */}
-      <Input
+      <div className={classes.div}><span><Input
         label="Amount"
         type="number"
         id="amount"
@@ -33,8 +34,9 @@ const MealsItemForm = (props) => {
         max="5"
         defaultValue="1"
         onChange={handleInputChange}
-      />
-      <button onClick={addItemForm}>+ ADD</button>
+      /></span><span>
+      <button onClick={addItemForm} id={props.id}>+ ADD</button></span>
+      </div>
     </form>
   );
 };
