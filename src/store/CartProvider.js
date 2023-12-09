@@ -14,8 +14,8 @@ const CartProvider = (props) => {
     updateItems((items) => {
       const updatedItems = [...items];
       const itemIndex = updatedItems.findIndex((item) => item.id === id);
-      console.log("ItemIndex", itemIndex);
-      console.log("Index if same id", id);
+      // console.log("ItemIndex", itemIndex);
+      // console.log("Index if same id", id);
       if (itemIndex !== -1) {
         if (updatedItems[itemIndex].quantity > 1) {
           updatedItems[itemIndex].quantity -= 1;

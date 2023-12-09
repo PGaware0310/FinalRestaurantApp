@@ -35,7 +35,7 @@ const MealsItemForm = (props) => {
         defaultValue="1"
         onChange={handleInputChange}
       /></span><span>
-      <button onClick={addItemForm} id={props.id}>+ ADD</button></span>
+      <button onClick={addItemForm} >+ ADD</button></span>
       </div>
     </form>
   );

@@ -10,7 +10,7 @@ return(
             <h3>{props.name}</h3>
             <div className={classes.description}>{props.description}</div>
             <div className={classes.price}>{price}</div>
-            <MealsItemForm  id={props.id} item={props}/> 
+            <MealsItemForm  item={props}/> 
         </div>
     </li>
 );

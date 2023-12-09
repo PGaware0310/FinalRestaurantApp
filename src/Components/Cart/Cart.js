@@ -8,13 +8,13 @@ const Cart = (props) => {
 
   const onReduceHandler=(id)=>{
     cartCnt.removeItem(id);
-    console.log("Index of item to reduce number of selected items:",id);
+    // console.log("Index of item to reduce number of selected items:",id);
   };
 
   const cartItems = (
     <ul >
-      {cartCnt.items.map((item,id) => (
-        <li  className={classes.cart} key={id} >
+      {cartCnt.items.map((item) => (
+        <li  className={classes.cart} >
           <div className={classes.name}>{item.name}</div>
           <div className={classes.style}>
           <span className={classes.price}>${item.price.toFixed(2)}</span>
