@@ -3,7 +3,8 @@ import CartContext from "./cart-context";
 
 const CartProvider = (props) => {
   const [items, updateItems] = useState([]);
-
+  // const [totalQuant, setTotalQuant] = useState(0);
+  
   const addToCart = (item) => {
     updateItems([...items, item]);
     // items.push(item);
@@ -28,10 +29,30 @@ const CartProvider = (props) => {
     });
   };
 
+  const plusItemsInCart = (id) => {
+    updateItems((itm) => {
+      const update = [...itm];
+      const index = update.findIndex((item) => item.id === id);
+      if (index !== -1) {
+        if (update[index].quantity >= 1) {
+          update[index].quantity += 1;
+        }
+      }
+      return update;
+    });
+  };
+
+  const clearItem = () => {
+    updateItems([]);
+  };
+
   const cartContext = {
     items: items,
     addItem: addToCart,
     removeItem: removeToCart,
+    plusItems: plusItemsInCart,
+    // totalQuantity: totalQuant,
+    clearItem:clearItem,
   };
 
   return (

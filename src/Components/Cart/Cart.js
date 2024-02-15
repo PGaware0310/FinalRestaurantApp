@@ -11,6 +11,12 @@ const Cart = (props) => {
     // console.log("Index of item to reduce number of selected items:",id);
   };
 
+  const onPlusHandler=(id)=>{
+    cartCnt.plusItems(id);
+  }
+const orderItem=()=>{
+  cartCnt.clearItem();
+}
   const cartItems = (
     <ul >
       {cartCnt.items.map((item) => (
@@ -20,7 +26,7 @@ const Cart = (props) => {
           <span className={classes.price}>${item.price.toFixed(2)}</span>
           <span>x{item.quantity}</span>
           <button className={classes["span-button"]} onClick={()=>onReduceHandler(item.id)}>-</button>
-          <button className={classes["span-button"]}>+</button>
+          <button className={classes["span-button"]} onClick={()=>onPlusHandler(item.id)}>+</button>
           </div>
         </li>
       ))}
@@ -41,7 +47,7 @@ const Cart = (props) => {
       </div>
       <div className={classes.button}>
         <button onClick={props.onHide}>Close</button>
-        <button className={classes.button}>Order</button>
+        <button className={classes.button} onClick={orderItem}>Order</button>
       </div>
     </Modal>
   );
